@@ -13,7 +13,6 @@ public class MainController : MonoBehaviour
     {
         buttonList = GetComponentsInChildren<Button>();
         curLv = int.Parse(System.IO.File.ReadAllLines("data.txt")[0]);
-        Debug.Log(curLv + " " + buttonList.Length);
         for (int i = 0; i < curLv - 1; i++)
         {
             buttonList[i].enabled = true;

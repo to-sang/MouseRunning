@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -175,5 +176,10 @@ public class PlayerMovement : MonoBehaviour
     private void StopWallJump()
     {
         wallJumping = false;
+    }
+
+    public void BackToLevel()
+    {
+        SceneManager.LoadScene("Level");
     }
 }
