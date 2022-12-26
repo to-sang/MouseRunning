@@ -18,6 +18,11 @@ public class MainController : MonoBehaviour
             buttonList[i].enabled = true;
             buttonList[i].image.color = Color.green;
         }
+        for (int i = 4; i < curLv - 1; ++i)
+        {
+            buttonList[i].enabled = true;
+            buttonList[i].image.color = new Color32(255, 0, 255, 255);
+        }    
         buttonList[curLv - 1].enabled = true;
         buttonList[curLv - 1].image.color = Color.white;
         for (int i = curLv; i < buttonList.Length - 1; i++)
@@ -70,15 +75,5 @@ public class MainController : MonoBehaviour
     public void Btn8Click()
     {
         SceneManager.LoadScene("Level 8");
-    }
-
-    public void Btn9Click()
-    {
-        SceneManager.LoadScene("Level 9");
-    }
-
-    public void Btn10Click()
-    {
-        SceneManager.LoadScene("Level 10");
     }
 }

@@ -12,4 +12,9 @@ public class StartMenu : MonoBehaviour
             System.IO.File.WriteAllText("data.txt", "1");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void Tutorial()
+    {
+
+    }    
 }
